@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diego Barbosa | Portafolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="fade">
+
+<img src="img/perfil.webp" alt="Diego Barbosa" class="perfil">
+
+<h1 class="glow">Diego Andrés Barbosa Parra</h1>
+
+<p>Barrancabermeja, Colombia</p>
+
+<p>Técnico en redes y mantenimiento de computadores</p>
+
+<p>Enfocado en desarrollo de software y seguridad tecnológica</p>
+
+</header>
+
+
+<section class="fade">
+
+<h2>Sobre mí</h2>
+
+<div class="card">
+
+<p>Soy una persona autodidacta enfocada en construir soluciones tecnológicas reales.</p>
+
+<p>Mi formación comenzó en redes y mantenimiento de computadores, donde desarrollé una base sólida en infraestructura tecnológica y resolución de problemas.</p>
+
+<p>Actualmente estoy enfocado en aprender programación y desarrollo de software con el objetivo de crear herramientas y sistemas propios.</p>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Fortalezas</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Disciplina y mentalidad estructurada</li>
+<li>Aprendizaje autodidacta</li>
+<li>Resolución de problemas técnicos</li>
+<li>Adaptabilidad en entornos exigentes</li>
+<li>Enfoque en crecimiento a largo plazo</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Trayectoria</h2>
+
+<div class="card">
+
+<div class="galeria">
+
+<img src="img/compañeros.png" alt="compañeros">
+<img src="img/Grupo.png" alt="grupo">
+
+</div>
+
+<p>Parte de mi formación personal estuvo marcada por disciplina y trabajo en equipo, experiencias que fortalecieron mi carácter y mi capacidad para enfrentar entornos exigentes.</p>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Mi entorno de trabajo</h2>
+
+<div class="card">
+
+<img src="img/setup.png" class="foto-seccion">
+
+<p>Actualmente desarrollo mi proceso de aprendizaje en programación y tecnología desde mi propio entorno de trabajo, experimentando y construyendo proyectos personales.</p>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Actualmente aprendiendo</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Programación</li>
+<li>Desarrollo de software</li>
+<li>Lógica de programación</li>
+<li>Redes</li>
+<li>Seguridad tecnológica</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Visión</h2>
+
+<div class="card">
+
+<p>Mi objetivo es construir una empresa enfocada en seguridad tecnológica y desarrollo de soluciones digitales confiables y escalables.</p>
+
+<p>Este portafolio documenta mi proceso de aprendizaje y crecimiento dentro del mundo de la tecnología.</p>
+
+</div>
+
+</section>
+
+
+<section class="fade">
+
+<h2>Frase</h2>
+
+<div class="card">
+
+<p>"Los éxitos más importantes se consiguen cuando existe la posibilidad de fracasar"</p>
+
+<p>- Mark Zuckerberg</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Diego Barbosa</p>
+
+</footer>
+
+
+<script>
+
+const elements = document.querySelectorAll('.fade');
+
+function show(){
+
+const trigger = window.innerHeight * 0.85;
+
+elements.forEach(el => {
+
+const top = el.getBoundingClientRect().top;
+
+if(top < trigger){
+
+el.classList.add('visible');
+
+}
+
+})
+
+}
+
+window.addEventListener('scroll', show);
+
+show();
+
+</script>
+
+
+</body>
+</html>
