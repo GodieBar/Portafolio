@@ -1,99 +1,122 @@
+/* ===== CONFIGURACIÓN GENERAL DE LA PÁGINA ===== */
+
 body{
-margin:0;
-font-family:'Rajdhani',sans-serif;
-background:#0f0f0f;
-color:#eaeaea;
+margin:0; /* elimina el margen automático del navegador */
+font-family:'Rajdhani',sans-serif; /* fuente principal del sitio */
+background:#0f0f0f; /* color de fondo oscuro */
+color:#eaeaea; /* color general del texto */
 }
+
+/* ===== ENCABEZADO ===== */
 
 header{
-text-align:center;
-padding:80px 20px;
+text-align:center; /* centra todo el contenido del header */
+padding:10px 10px; /* espacio interno arriba/abajo y lados */
 }
+
+/* ===== TÍTULO PRINCIPAL ===== */
 
 h1{
-font-family:'Orbitron',sans-serif;
-font-size:40px;
-color:#00ff9c;
+font-family:'Orbitron',sans-serif; /* fuente estilo tecnológica */
+font-size:40px; /* tamaño del título */
+color:#00ff9c; /* color verde neón */
 }
+
+/* ===== SUBTÍTULOS ===== */
 
 h2{
-font-family:'Orbitron',sans-serif;
-color:#6a00ff;
-margin-bottom:10px;
+font-family:'Orbitron',sans-serif; /* misma fuente tecnológica */
+color:#6a00ff; /* color morado */
+margin-bottom:10px; /* espacio debajo del subtítulo */
 }
+
+/* ===== SECCIONES ===== */
 
 section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
+max-width:550px; /* ancho máximo del contenido */
+margin:auto; /* centra la sección horizontalmente */
+padding:10px 10px; /* espacio interno */
 }
+
+/* ===== TARJETAS DE CONTENIDO ===== */
 
 .card{
-background:#151515;
-padding:25px;
-border-radius:10px;
-margin-top:20px;
-box-shadow:0 0 10px rgba(0,255,156,0.1);
+background:#151515; /* fondo oscuro de las tarjetas */
+padding:1px; /* espacio interno */
+border-radius:6px; /* bordes ligeramente redondeados */
+margin-top:1px; /* separación superior */
+box-shadow:0 0 10px rgba(0, 255, 157, 0.426); /* sombra suave */
 }
+
+/* ===== LISTAS ===== */
 
 ul{
-line-height:1.8;
+line-height:1.8; /* separación entre líneas */
 }
+
+/* ===== PIE DE PÁGINA ===== */
 
 footer{
-text-align:center;
-padding:40px;
-color:#888;
+text-align:center; /* centra el texto */
+padding:1px; /* espacio interno */
+color:#888; /* color gris suave */
 }
+
+/* ===== EFECTO DE BRILLO EN EL NOMBRE ===== */
 
 .glow{
-text-shadow:0 0 10px #00ff9c;
+text-shadow:0 0 10px #00ff9c; /* brillo verde */
 }
 
+/* ===== ANIMACIÓN DE APARICIÓN ===== */
+
 .fade{
-opacity:0;
-transform:translateY(20px);
-transition:all 0.8s ease;
+opacity:0; /* elemento empieza invisible */
+transform:translateY(20px); /* empieza ligeramente abajo */
+transition:all 0.8s ease; /* animación suave */
 }
 
 .fade.visible{
-opacity:1;
-transform:translateY(0);
+opacity:1; /* aparece */
+transform:translateY(0); /* vuelve a su posición */
 }
+
+/* ===== FOTO DE PERFIL ===== */
 
 .perfil{
-width:160px;
-height:160px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:20px;
-border:2px solid #00ff9c;
-box-shadow:0 0 15px #00ff9c;
+width:200px; /* ancho de la imagen */
+height:200px; /* alto */
+border-radius:50%; /* imagen circular */
+object-fit:cover; /* recorte correcto */
+margin-bottom:10px; /* espacio inferior */
+border:2px solid #00ff9c; /* borde verde */
+box-shadow:0 0 15px #00ff9c; /* efecto de brillo */
 }
 
-/* galería de fotos trayectoria */
+/* ===== GALERÍA DE FOTOS (TRAYECTORIA) ===== */
 
 .galeria{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:250px;
-margin-bottom:20px;
+display:grid; /* usa sistema grid */
+grid-template-columns:repeat(2,250px); /* dos columnas de 250px */
+justify-content:center; /* centra todo el bloque */
+gap:20px; /* espacio entre imágenes */
+margin-bottom:10px; /* espacio debajo */
 }
 
 .galeria img{
-width:100%;
-max-height:220px;
-object-fit:cover;
-border-radius:10px;
+width:100%; /* ocupa todo el ancho de la columna */
+max-height:300px; /* altura máxima */
+object-fit:cover; /* recorta sin deformar */
+border-radius: 120px; /* bordes suaves */
 }
 
-/* foto del setup */
+/* ===== FOTO DEL SETUP ===== */
 
 .foto-seccion{
-display:block;
-margin:auto;
-max-width:500px;
-width:100%;
-border-radius:10px;
-margin-bottom:20px;
+display:block; /* comportamiento de bloque */
+margin:auto; /* centra la imagen */
+max-width:500px; /* ancho máximo */
+width:100%; /* se adapta al contenedor */
+border-radius:10px; /* bordes redondeados */
+margin-bottom:20px; /* espacio inferior */
 }

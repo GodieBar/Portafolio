@@ -1,41 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Le dice al navegador que este documento usa HTML5 -->
 
-<head>
+<html lang="es"> <!-- Inicio del documento HTML y define que el idioma es español -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> <!-- Contenedor de configuración del sitio (no visible en la página) -->
 
-<title>Diego Barbosa | Portafolio</title>
+<meta charset="UTF-8"> <!-- Permite usar caracteres especiales como ñ y tildes -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Hace que la página sea responsive en celulares -->
+
+<title>Diego Barbosa | Portafolio</title> 
+<!-- Título que aparece en la pestaña del navegador -->
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+<!-- Importa las fuentes desde Google Fonts -->
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css"> 
+<!-- Conecta el archivo CSS externo -->
 
 </head>
 
-<body>
+<body> <!-- Todo lo visible del sitio empieza aquí -->
 
-<header class="fade">
+<header class="fade"> <!-- Sección superior del portafolio -->
 
 <img src="img/perfil.webp" alt="Diego Barbosa" class="perfil">
+<!-- Imagen de perfil -->
 
 <h1 class="glow">Diego Andrés Barbosa Parra</h1>
+<!-- Título principal -->
 
-<p>Barrancabermeja, Colombia</p>
+<p>Barrancabermeja, Colombia</p> <!-- Ubicación -->
 
-<p>Técnico en redes y mantenimiento de computadores</p>
+<p>Técnico en redes y mantenimiento de computadores</p> <!-- Formación -->
 
-<p>Enfocado en desarrollo de software y seguridad tecnológica</p>
+<p>Enfocado en desarrollo de software y seguridad tecnológica</p> <!-- Área de enfoque -->
 
 </header>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección de presentación personal -->
 
 <h2>Sobre mí</h2>
 
-<div class="card">
+<div class="card"> <!-- Caja visual que contiene información -->
 
 <p>Soy una persona autodidacta enfocada en construir soluciones tecnológicas reales.</p>
 
@@ -48,13 +56,13 @@
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección de fortalezas -->
 
 <h2>Fortalezas</h2>
 
 <div class="card">
 
-<ul>
+<ul> <!-- Lista de habilidades -->
 
 <li>Disciplina y mentalidad estructurada</li>
 <li>Aprendizaje autodidacta</li>
@@ -69,42 +77,43 @@
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección trayectoria -->
 
 <h2>Trayectoria</h2>
 
 <div class="card">
 
-<div class="galeria">
+<div class="galeria"> <!-- Contenedor de imágenes -->
 
 <img src="img/compañeros.png" alt="compañeros">
 <img src="img/Grupo.png" alt="grupo">
 
 </div>
 
-<p>Parte de mi formación personal estuvo marcada por disciplina y trabajo en equipo, experiencias que fortalecieron mi carácter y mi capacidad para enfrentar entornos exigentes.</p>
+<p>Parte de mi formación personal estuvo marcada por disciplina y trabajo en equipo.</p>
 
 </div>
 
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección entorno de trabajo -->
 
 <h2>Mi entorno de trabajo</h2>
 
 <div class="card">
 
 <img src="img/setup.png" class="foto-seccion">
+<!-- Imagen del setup -->
 
-<p>Actualmente desarrollo mi proceso de aprendizaje en programación y tecnología desde mi propio entorno de trabajo, experimentando y construyendo proyectos personales.</p>
+<p>Actualmente desarrollo mi proceso de aprendizaje en programación y tecnología.</p>
 
 </div>
 
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección aprendizaje -->
 
 <h2>Actualmente aprendiendo</h2>
 
@@ -125,22 +134,22 @@
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección visión -->
 
 <h2>Visión</h2>
 
 <div class="card">
 
-<p>Mi objetivo es construir una empresa enfocada en seguridad tecnológica y desarrollo de soluciones digitales confiables y escalables.</p>
+<p>Mi objetivo es construir una empresa enfocada en seguridad tecnológica.</p>
 
-<p>Este portafolio documenta mi proceso de aprendizaje y crecimiento dentro del mundo de la tecnología.</p>
+<p>Este portafolio documenta mi proceso de aprendizaje.</p>
 
 </div>
 
 </section>
 
 
-<section class="fade">
+<section class="fade"> <!-- Sección frase -->
 
 <h2>Frase</h2>
 
@@ -155,28 +164,33 @@
 </section>
 
 
-<footer>
+<footer> <!-- Pie de página -->
 
 <p>© 2026 Diego Barbosa</p>
 
 </footer>
 
 
-<script>
+<script> 
 
+// Selecciona todos los elementos que tienen la clase "fade"
 const elements = document.querySelectorAll('.fade');
 
-function show(){
+function show(){ // Función que activa animaciones al hacer scroll
 
+// Calcula el punto donde la animación se activa
 const trigger = window.innerHeight * 0.85;
 
 elements.forEach(el => {
 
-const top = el.getBoundingClientRect().top;
+const top = el.getBoundingClientRect().top; 
+// Obtiene la posición del elemento en la pantalla
 
-if(top < trigger){
+if(top < trigger){ 
+// Si el elemento entra en la zona visible
 
-el.classList.add('visible');
+el.classList.add('visible'); 
+// Agrega la clase visible para activar la animación
 
 }
 
@@ -184,12 +198,12 @@ el.classList.add('visible');
 
 }
 
+// Detecta cuando el usuario hace scroll
 window.addEventListener('scroll', show);
 
-show();
+show(); // Ejecuta la función al cargar la página
 
 </script>
-
 
 </body>
 </html>
